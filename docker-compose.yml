@@ -13,6 +13,13 @@ services:
         target: /var/run/php-fpm
         volume:
           nocopy: true
+    environment:
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=laravel
+      - DB_USERNAME=laravel
+      - DB_PASSWORD=secret
 
   web:
     build:
@@ -35,5 +42,27 @@ services:
     depends_on:
       - app
 
+  db:
+    build:
+      context: .
+      dockerfile: ./docker/mysql/Dockerfile
+    ports:
+      - target: 3306
+        published: 33060
+        protocol: tcp
+        mode: host
+    volumes:
+      - type: volume
+        source: data
+        target: /var/lib/mysql
+        volume:
+          nocopy: true
+    environment:
+      - MYSQL_DATABASE=laravel
+      - MYSQL_USER=laravel
+      - MYSQL_PASSWORD=secret
+      - MYSQL_ROOT_PASSWORD=secret
+
 volumes:
   php-fpm-socket:
+  data:
