@@ -25,16 +25,16 @@ services:
       - ./src:/app:cached
 
       # bash, prompt, vim, git settings
-      - ~/dotfiles/.bash_profile:/root/.bash_profile
-      - ~/dotfiles/.bashrc:/root/.bashrc
-      - ~/dotfiles/.dircolors:/root/.dircolors
-      - ~/dotfiles/.vimrc:/root/.vimrc
+      - ~/dotfiles/.bash_profile:/root/.bash_profile:ro
+      - ~/dotfiles/.bashrc:/root/.bashrc:ro
+      - ~/dotfiles/.dircolors:/root/.dircolors:ro
+      - ~/dotfiles/.vimrc:/root/.vimrc:ro
 
-      - ~/dotfiles:/root/dotfiles
+      - ~/dotfiles:/root/dotfiles:ro
 
-      - ~/.vim:/root/.vim
-      - ~/.ssh:/root/.ssh
-      - ~/.gitconfig:/root/.gitconfig
+      - ~/.vim:/root/.vim:ro
+      - ~/.ssh:/root/.ssh:ro
+      - ~/.gitconfig:/root/.gitconfig:ro
 
       # Uncomment the next line to use Docker from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker-compose for details.
       # - /var/run/docker.sock:/var/run/docker.sock
