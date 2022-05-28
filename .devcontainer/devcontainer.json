@@ -23,10 +23,30 @@
 	// "remoteUser": "vscode",
 
 	// Set *default* container specific settings.json values on container create.
-	"settings": {},
+	"settings": {
+		// Tailwind CSS
+		"files.associations": {
+			"*.css": "tailwindcss"
+		},
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+
+		// phpcs
+		"phpcs.standard": "PSR2",
+	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
+		"bmewburn.vscode-intelephense-client",
+		"xdebug.php-debug",
+		"ikappas.phpcs",
+		"neilbrayfield.php-docblocker",
+		"bradlc.vscode-tailwindcss",
+		"christian-kohler.path-intellisense",
+		"alefragnani.Bookmarks",
+		"wmaurer.change-case",
+		"tomoki1207.vscode-input-sequence"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
