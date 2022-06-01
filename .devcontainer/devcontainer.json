@@ -43,12 +43,25 @@
 		"xdebug.php-debug",
 		"ikappas.phpcs",
 		"neilbrayfield.php-docblocker",
+		"amiralizadeh9480.laravel-extra-intellisense",
+		"ryannaddy.laravel-artisan",
+		"onecentlin.laravel5-snippets",
+		"onecentlin.laravel-blade",
+		"shufo.vscode-blade-formatter",
+		"austenc.laravel-blade-spacer",
+		"naoray.laravel-goto-components",
+		"codingyu.laravel-goto-view",
 		"bradlc.vscode-tailwindcss",
-		"christian-kohler.path-intellisense",
-		"wmaurer.change-case",
-		"tomoki1207.vscode-input-sequence",
 		"donjayamanne.githistory",
-		"mhutchie.git-graph"
+		"mhutchie.git-graph",
+		"alefragnani.Bookmarks",
+		"mikestead.dotenv",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"vincaslt.highlight-matching-tag",
+		"christian-kohler.path-intellisense",
+		"tomoki1207.vscode-input-sequence",
+		"wmaurer.change-case"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
