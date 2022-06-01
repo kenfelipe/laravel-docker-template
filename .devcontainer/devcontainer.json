@@ -44,9 +44,10 @@
 		"neilbrayfield.php-docblocker",
 		"bradlc.vscode-tailwindcss",
 		"christian-kohler.path-intellisense",
-		"alefragnani.Bookmarks",
 		"wmaurer.change-case",
-		"tomoki1207.vscode-input-sequence"
+		"tomoki1207.vscode-input-sequence",
+		"donjayamanne.githistory",
+		"mhutchie.git-graph"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
