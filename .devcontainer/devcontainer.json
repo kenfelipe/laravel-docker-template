@@ -24,6 +24,10 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
+		// General
+		"emmet.triggerExpansionOnTab": true,
+		"emmet.showSuggestionsAsSnippets": true,
+
 		// Tailwind CSS
 		"files.associations": {
 			"*.css": "tailwindcss"
@@ -34,7 +38,23 @@
 
 		// phpcs
 		"phpcs.standard": "PSR2",
-		"phpcs.executablePath": "./vendor/bin/phpcs"
+		"phpcs.executablePath": "./vendor/bin/phpcs",
+
+		// PHP
+		"[php]": {
+			"editor.tabSize": 4,
+			"editor.insertSpaces": true,
+		},
+
+		// Blade
+		"blade.format.enable": true,
+		"[blade]": {
+			"editor.tabSize": 2,
+			"editor.insertSpaces": true,
+			"editor.wordWrap": "on",
+			"editor.wordWrapColumn": 80,
+			"editor.defaultFormatter": "shufo.vscode-blade-formatter"
+		},
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
