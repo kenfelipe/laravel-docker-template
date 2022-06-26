@@ -59,6 +59,7 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
+		"octref.vetur",
 		"bmewburn.vscode-intelephense-client",
 		"xdebug.php-debug",
 		"ikappas.phpcs",
@@ -66,9 +67,6 @@
 		"amiralizadeh9480.laravel-extra-intellisense",
 		"ryannaddy.laravel-artisan",
 		"onecentlin.laravel5-snippets",
-		"onecentlin.laravel-blade",
-		"shufo.vscode-blade-formatter",
-		"austenc.laravel-blade-spacer",
 		"naoray.laravel-goto-components",
 		"codingyu.laravel-goto-view",
 		"bradlc.vscode-tailwindcss",
